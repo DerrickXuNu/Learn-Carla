@@ -104,7 +104,7 @@ def main():
                     print("    Frame: %d   Sensor: %s" % (s_frame[0], s_frame[1]))
 
             except Empty:
-                print("    Some of the sensor information is missed")
+                print("   Some of the sensor information is missed")
 
     finally:
         world.apply_settings(original_settings)
