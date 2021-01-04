@@ -68,7 +68,7 @@ def main():
     client.set_timeout(10.0)
     synchronous_master = False
 
-    try:
+    try:    
         world = client.get_world()
         origin_settings = world.get_settings()
 
