@@ -66,6 +66,11 @@ def main():
             agent.update_information(vehicle)
 
             world.tick()
+            
+            if len(agent._local_planner.waypoints_queue)<1:
+                print('======== Success, Arrivied at Target Point!')
+                break
+                
             # top view
             spectator = world.get_spectator()
             transform = vehicle.get_transform()
